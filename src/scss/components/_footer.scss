@@ -1,0 +1,49 @@
+#app-footer {
+    grid-area: footer;
+	background-color: $brand-secondary;
+    color: $brand-text-main;
+
+	.footer-brand {
+		display: inline-block;
+		margin: 1rem 0;
+        border-radius: $radius-element;
+        transition: linear 0.075s all;
+        &:hover, &:focus {
+            transform: scale(1.025);
+        }
+
+		img {
+			width: 5rem;
+			height: auto;
+			border-radius: $radius-element;
+			overflow: hidden;
+            user-select: none;
+		}
+    }
+    .footer-nav {
+        .nav-link {
+            color: $white;
+            font-size: .9rem;
+        }
+    }
+
+	.footer-bottom {
+        background-color: $brand;
+
+		.bottom-link {
+            padding: 0.5rem 0;
+            font-size: .8rem;
+            text-align: center;
+
+            a {
+                color: white;
+            }
+        }
+
+        .bottom-copyright {
+            padding: 0.25rem 1rem;
+            font-size: .75rem;
+            text-align: center;
+        }
+	}
+}
