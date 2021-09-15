@@ -1,0 +1,31 @@
+.popup-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, .6);
+    z-index: 4;
+
+    .popup-content {
+        position: relative;
+        width: 50%;
+        margin: auto;
+        padding: 0 16px;
+        background-color: white;
+        border: 1px solid #013245;
+        border-radius: 2px;
+
+        .content-page {
+            display: none;
+        }
+        .content-page-show {
+            display: inherit;
+        }
+    }
+}
+
+.popup-container-show {
+    display: inherit;
+}
