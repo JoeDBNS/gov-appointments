@@ -87,6 +87,647 @@
     </header>
 
     <main id="app-main" class="container-fluid">
+        <section id="app-popup" class="popup-container">
+            <div class="popup-content mt-5">
+                <div class="container">
+                    <div class="row">
+                        <section class="form-module col-12">
+                            <form class="container-fluid col-12 content-page" data-popup-page="education">
+                                <div class="form-page form-page-active">
+                                    <h1 class="form-header">Add An Educational Facility</h1>
+
+                                    <hr>
+
+                                    <div class="form-section row mt-4">
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_facility_name">Facility Name</label>
+                                            <input type="text" id="popup_facility_name" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_facility_state">Facility State</label>
+                                            <select name="popup_facility_state" id="popup_facility_state" required>
+                                                <option></option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-6">
+                                            <label for="popup_facility_year_started">Year Started Attending</label>
+                                            <input type="number" id="popup_facility_year_started" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-6">
+                                            <label for="popup_facility_year_stopped">Year Stopped Attending</label>
+                                            <input type="number" id="popup_facility_year_stopped" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12 mt-3">
+                                            <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
+                                                <legend class="fieldset-legend row">Did You Complete A Certificate or Degree?</legend>
+                                                <div class="fieldset-inputs row">
+                                                    <input id="fieldset_radio_popup_facility_cert_degree_yes" type="radio" name="fieldset_radio_popup_facility_cert_degree" value="yes">
+                                                    <label for="fieldset_radio_popup_facility_cert_degree_yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                                        <span class="label-text">Yes</span>
+                                                    </label>
+                                                    <input id="fieldset_radio_popup_facility_cert_degree_no" type="radio" name="fieldset_radio_popup_facility_cert_degree" value="no">
+                                                    <label for="fieldset_radio_popup_facility_cert_degree_no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                                        <span class="label-text">No</span>
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-12 row px-0 mx-0" data-target="fieldset_radio_popup_facility_cert_degree" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                            <div class="input-set col-12 col-md-12 col-lg-12">
+                                                <label for="popup_facility_field_of_study">Field(s) of Study</label>
+                                                <textarea id="popup_facility_field_of_study"></textarea>
+                                            </div>
+
+                                            <div class="input-set col-12 col-md-12 col-lg-12">
+                                                <label for="popup_facility_cert_degree_received">Certificates/Degrees Received</label>
+                                                <textarea id="popup_facility_cert_degree_received"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-action row justify-content-center mt-5">
+                                        <button class="btn" type="button" onclick="ClosePopupModule()">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form class="container-fluid col-12 content-page" data-popup-page="employment">
+                                <div class="form-page form-page-active">
+                                    <h1 class="form-header">Add Employment Information</h1>
+
+                                    <hr>
+
+                                    <div class="form-section row mt-4">
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_employment_name">Company/Organization Name</label>
+                                            <input type="text" id="popup_employment_name" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_employment_type">Type of Business</label>
+                                            <input type="text" id="popup_employment_type">
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_employment_position_title">Your Position/Title</label>
+                                            <input type="text" id="popup_employment_position_title" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12 mt-3">
+                                            <fieldset class="set-fieldset input-set-required set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
+                                                <legend class="fieldset-legend row">Is This Your Current Employer?</legend>
+                                                <div class="fieldset-inputs row">
+                                                    <input id="fieldset_radio_popup_employment_current_employer_yes" type="radio" name="fieldset_radio_popup_employment_current_employer" value="yes">
+                                                    <label for="fieldset_radio_popup_employment_current_employer_yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                                        <span class="label-text">Yes</span>
+                                                    </label>
+                                                    <input id="fieldset_radio_popup_employment_current_employer_no" type="radio" name="fieldset_radio_popup_employment_current_employer" value="no">
+                                                    <label for="fieldset_radio_popup_employment_current_employer_no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                                        <span class="label-text">No</span>
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="input-set input-set-required col-12 col-md-6 col-lg-6">
+                                            <label for="popup_employment_start_date">Start Date</label>
+                                            <input type="date" id="popup_employment_start_date" required>
+                                        </div>
+
+                                        <div class="col-6 row px-0 mx-0" data-target="fieldset_radio_popup_employment_current_employer" data-target-type="radio" data-target-pass="no" style="display: none;">
+                                            <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                                <label for="popup_employment_end_date">End Date</label>
+                                                <input type="date" id="popup_employment_end_date" data-required-nocheck>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 row px-0 mx-0" data-target="fieldset_radio_popup_employment_current_employer" data-target-type="radio" data-target-pass="yes">
+                                            <div class="input-set col-12 col-md-12 col-lg-12"></div>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_employment_city">Employer City</label>
+                                            <input type="text" id="popup_employment_city" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_employment_state">Employer State</label>
+                                            <select name="popup_employment_state" id="popup_employment_state" required>
+                                                <option></option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-action row justify-content-center mt-5">
+                                        <button class="btn" type="button" onclick="ClosePopupModule()">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form class="container-fluid col-12 content-page" data-popup-page="license_cert">
+                                <div class="form-page form-page-active">
+                                    <h1 class="form-header">Add A License or Certificate</h1>
+
+                                    <hr>
+
+                                    <div class="form-section row mt-4">
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_license_certificate_title">License/Certificate Title</label>
+                                            <input type="text" id="popup_license_certificate_title" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_license_certificate_number">License/Certificate #</label>
+                                            <input type="text" id="popup_license_certificate_number" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-action row justify-content-center mt-5">
+                                        <button class="btn" type="button" onclick="ClosePopupModule()">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form class="container-fluid col-12 content-page" data-popup-page="marijuana">
+                                <div class="form-page form-page-active">
+                                    <h1 class="form-header">Add A Marijuana License</h1>
+
+                                    <hr>
+
+                                    <div class="form-section row mt-4">
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_marijuana_license_name">License Name</label>
+                                            <input type="text" id="popup_marijuana_license_name" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_marijuana_license_number">License #</label>
+                                            <input type="text" id="popup_marijuana_license_number" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-action row justify-content-center mt-5">
+                                        <button class="btn" type="button" onclick="ClosePopupModule()">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form class="container-fluid col-12 content-page" data-popup-page="office_held">
+                                <div class="form-page form-page-active">
+                                    <h1 class="form-header">Add A Public Office Held</h1>
+
+                                    <hr>
+
+                                    <div class="form-section row mt-4">
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_office_title">Office Title</label>
+                                            <input type="text" id="popup_office_title" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_office_start_date">Date of Election or Appointment</label>
+                                            <input type="date" id="popup_office_start_date" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_office_term_length">Length of Term (Years)</label>
+                                            <input type="number" id="popup_office_term_length" required>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_office_level">Level of Government</label>
+                                            <select name="popup_office_level" id="popup_office_level" required>
+                                                <option></option>
+                                                <option>City</option>
+                                                <option>County</option>
+                                                <option>District</option>
+                                                <option>State</option>
+                                                <option>Federal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-action row justify-content-center mt-5">
+                                        <button class="btn" type="button" onclick="ClosePopupModule()">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form class="container-fluid col-12 content-page" data-popup-page="board">
+                                <div class="form-page form-page-active">
+                                    <h1 class="form-header">Add A Board To Apply For</h1>
+
+                                    <hr>
+
+                                    <div class="form-section row mt-4">
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_board_board">Board</label>
+                                            <select name="popup_board_board" id="popup_board_board" required>
+                                                <option></option>
+                                                <option>General Applicant / Any Board</option>
+                                                <option>21st Century Talent Creation Subcommittee</option>
+                                                <option>A-F Peer Review Panel</option>
+                                                <option>Advisory Board for the Michigan Intelligence Operations Center for Homeland Security</option>
+                                                <option>Advisory Council on Deaf, Deafblind and Hard of Hearing</option>
+                                                <option>Agriculture Preservation Fund Board</option>
+                                                <option>Asian Pacific American Affairs Commission</option>
+                                                <option>Asparagus Marketing Program Advisory Board</option>
+                                                <option>Autism Council</option>
+                                                <option>Automobile Theft Prevention Authority Board of Directors</option>
+                                                <option>Barrier Free Design Board</option>
+                                                <option>Belle Isle State Park Advisory Committee</option>
+                                                <option>Black Leadership Advisory Council</option>
+                                                <option>Board of Barber Examiners</option>
+                                                <option>Board of Boiler Rules</option>
+                                                <option>Board Of Cosmetology</option>
+                                                <option>Board of Ethics</option>
+                                                <option>Board of Examiners in Mortuary Science</option>
+                                                <option>Board of Health and Safety Compliance and Appeals</option>
+                                                <option>Board of Interpreters for the Deaf, Deafblind and Hard of Hearing</option>
+                                                <option>Board of Law Examiners</option>
+                                                <option>Board of Massage Therapy</option>
+                                                <option>Board of Mechanical Rules</option>
+                                                <option>Board of Nursing Home Administrators</option>
+                                                <option>Board of Occupational Therapists</option>
+                                                <option>Board of Professional Engineers</option>
+                                                <option>Board of Professional Surveyors</option>
+                                                <option>Board of State Canvassers</option>
+                                                <option>Census Complete Count Committee</option>
+                                                <option>Central Michigan University Board of Control</option>
+                                                <option>Certificate of Need Commission</option>
+                                                <option>Child Abuse and Neglect Prevention Board ("Children's Trust Fund")</option>
+                                                <option>Child Lead Exposure Elimination Commission </option>
+                                                <option>Civil Service Commission</option>
+                                                <option>Collection Practices Board</option>
+                                                <option>Commission for Blind Persons</option>
+                                                <option>Commission for Logistics and Supply Chain Collaboration</option>
+                                                <option>Commission on Community Action and Economic Opportunity</option>
+                                                <option>Commission on Services to the Aging</option>
+                                                <option>Committee on Michigan's Mining Future</option>
+                                                <option>Committee on the Purchase of Goods and Services from Community rehabilitation Organizations </option>
+                                                <option>Correctional Officers’ Training Council</option>
+                                                <option>Council on Climate Solutions</option>
+                                                <option>COVID-19 Student Recovery Advisory Council</option>
+                                                <option>Crime Victim Services Commission</option>
+                                                <option>Criminal Justice Policy Commission</option>
+                                                <option>Data Collection Agency Governing Board</option>
+                                                <option>Detroit Financial Review Commission</option>
+                                                <option>Detroit Wayne County Health Authority</option>
+                                                <option>Detroit-Wayne County Port Authority</option>
+                                                <option>Developmental Disabilities Council</option>
+                                                <option>Early Childhood Investment Corporation</option>
+                                                <option>Education Commission of the States</option>
+                                                <option>Educator Advisory Council</option>
+                                                <option>Electrical Administrative Board</option>
+                                                <option>Electronic Recording Commission</option>
+                                                <option>Elevator Safety Board</option>
+                                                <option>Emergency 9-1-1 Service Committee</option>
+                                                <option>EMU Board of Regents</option>
+                                                <option>Environmental Justice Advisory Council</option>
+                                                <option>Environmental Permit Review Commission</option>
+                                                <option>Environmental Rules Review Committee (ERRC)</option>
+                                                <option>Environmental Science Advisory Board </option>
+                                                <option>Farm Produce Insurance Authority</option>
+                                                <option>Ferris State University Board of Control</option>
+                                                <option>Fire Fighters Training Council</option>
+                                                <option>Flint Water Interagency Coordinating Council</option>
+                                                <option>Food Security Commission</option>
+                                                <option>Food Security Council</option>
+                                                <option>Governor's Task Force on Child Abuse and Neglect</option>
+                                                <option>Governor’s Council on Physical Fitness, Health and Sports</option>
+                                                <option>Governor’s Traffic Safety Advisory Commission</option>
+                                                <option>Grand Rapids-Kent County Convention/Arena Authority</option>
+                                                <option>Grand Valley State University Board of Control</option>
+                                                <option>Grape and Wine Industry Council</option>
+                                                <option>Great Lakes Commission</option>
+                                                <option>Great Lakes Protection Fund Board of Directors</option>
+                                                <option>Great Lakes Water Authority</option>
+                                                <option>GVSU Board of Trustees</option>
+                                                <option>Health Information Technology Commission</option>
+                                                <option>Hispanic/Latino Commission</option>
+                                                <option>Horse Racing Advisory Commission</option>
+                                                <option>Human Trafficking Commission</option>
+                                                <option>Human Trafficking Health Advisory Board</option>
+                                                <option>Huron-Clinton Metropolitan Park Authority Board of Commissioners</option>
+                                                <option>Idlewild Centennial Commission</option>
+                                                <option>Impaired Driving Safety Commission</option>
+                                                <option>Indiana-Michigan Boundary Line Commission</option>
+                                                <option>Internship</option>
+                                                <option>Interstate Oil and Gas Compact Commission</option>
+                                                <option>Investment Advisory Committee</option>
+                                                <option>Judicial Tenure Commission</option>
+                                                <option>Lake Superior State University Board of Control</option>
+                                                <option>Large Carnivore Breeding Advisory Council</option>
+                                                <option>Law Enforcement Officers Memorial Monument Fund Commission</option>
+                                                <option>Library of Michigan Board of Trustees</option>
+                                                <option>Liquor Control Commission</option>
+                                                <option>Local Community Stabilization Authority Council</option>
+                                                <option>Mackinac Bridge Authority</option>
+                                                <option>Mackinac Island State Park Commission</option>
+                                                <option>Mackinac Straits Corridor Authority</option>
+                                                <option>Manufactured Housing Commission</option>
+                                                <option>MEDC Executive Committee</option>
+                                                <option>Mental Health Diversion Council</option>
+                                                <option>MI-STEM Council</option>
+                                                <option>Michigan Aeronautics Commission</option>
+                                                <option>Michigan Appellate Defender Commission</option>
+                                                <option>Michigan Apple Committee</option>
+                                                <option>Michigan Athletic Trainer Board</option>
+                                                <option>Michigan Bean Commission</option>
+                                                <option>Michigan Beef Industry Commission</option>
+                                                <option>Michigan Blueberry Commission</option>
+                                                <option>Michigan Board of Accountancy</option>
+                                                <option>Michigan Board of Acupuncture</option>
+                                                <option>Michigan Board of Architects</option>
+                                                <option>Michigan Board of Audiology</option>
+                                                <option>Michigan Board of Behavior Analysts</option>
+                                                <option>Michigan Board of Chiropractic</option>
+                                                <option>Michigan Board of Counseling</option>
+                                                <option>Michigan Board of Dentistry</option>
+                                                <option>Michigan Board of Licensed Midwifery</option>
+                                                <option>Michigan Board of Marriage and Family Therapy</option>
+                                                <option>Michigan Board of Medicine</option>
+                                                <option>Michigan Board of Nursing</option>
+                                                <option>Michigan Board of Optometry</option>
+                                                <option>Michigan Board of Osteopathic Medicine and Surgery</option>
+                                                <option>Michigan Board of Pharmacy</option>
+                                                <option>Michigan Board of Physical Therapy</option>
+                                                <option>Michigan Board of Podiatric Medicine and Surgery</option>
+                                                <option>Michigan Board of Psychology</option>
+                                                <option>Michigan Board of Real Estate Appraisers</option>
+                                                <option>Michigan Board of Real Estate Brokers and Salespersons</option>
+                                                <option>Michigan Board of Respiratory Care</option>
+                                                <option>Michigan Board of Social Work</option>
+                                                <option>Michigan Board of Speech Language Pathology</option>
+                                                <option>Michigan Board of Veterinary Medicine</option>
+                                                <option>Michigan Carrot Commission</option>
+                                                <option>Michigan Cherry Committee</option>
+                                                <option>Michigan Citizen-Community Emergency Response Coordinating Council (MCCERCC)</option>
+                                                <option>Michigan Civil Rights Commission</option>
+                                                <option>Michigan Commission of Agriculture and Rural Development</option>
+                                                <option>Michigan Commission on Law Enforcement Standards</option>
+                                                <option>Michigan Committee on Juvenile Justice</option>
+                                                <option>Michigan Community Corrections Board</option>
+                                                <option>Michigan Community Service Commission</option>
+                                                <option>Michigan Compensation Appellate Commission</option>
+                                                <option>Michigan Consortium of Advanced Networks (MCAN)</option>
+                                                <option>Michigan Corn Marketing Committee</option>
+                                                <option>Michigan Council for Arts and Cultural Affairs</option>
+                                                <option>Michigan Council for Rehabilitation Services</option>
+                                                <option>Michigan Council on Future Mobility and Electrification</option>
+                                                <option>Michigan Craft Beverage Council</option>
+                                                <option>Michigan Dairy Market Program Committee</option>
+                                                <option>Michigan Domestic and Sexual Violence Prevention and Treatment Board</option>
+                                                <option>Michigan Early Stage Venture Investment Corp. Board of Directors</option>
+                                                <option>Michigan Education Trust Board of Directors</option>
+                                                <option>Michigan Employment Relations Commission</option>
+                                                <option>Michigan Film Office Advisory Council</option>
+                                                <option>Michigan Finance Authority Board of Directors</option>
+                                                <option>Michigan Freedom Trail Commission</option>
+                                                <option>Michigan Gaming Control Board</option>
+                                                <option>Michigan Health Endowment Fund</option>
+                                                <option>Michigan Historical Commission</option>
+                                                <option>Michigan Humanities Council</option>
+                                                <option>Michigan Indigent Defense Commission</option>
+                                                <option>Michigan Infrastructure Council</option>
+                                                <option>Michigan Interagency Coordinating Council for Infants and Toddlers with Developmental Disabilities</option>
+                                                <option>Michigan Interagency Council on Homelessness</option>
+                                                <option>Michigan Iron Industry Museum Advisory Board</option>
+                                                <option>Michigan Jail Reform Advisory Council</option>
+                                                <option>Michigan Judges Retirement System Board</option>
+                                                <option>Michigan Long Term Care Supports and Services Advisory Committee</option>
+                                                <option>Michigan Municipal Services Authority Board</option>
+                                                <option>Michigan Nursing Homes COVID-19 Preparedness Task Force</option>
+                                                <option>Michigan Onion Committee</option>
+                                                <option>Michigan Osteopathic Medicine Advisory Board</option>
+                                                <option>Michigan Parole Board</option>
+                                                <option>Michigan Pharmacy and Therapeutics Committee</option>
+                                                <option>Michigan Plum Advisory Board</option>
+                                                <option>Michigan Potato Industry Commission</option>
+                                                <option>Michigan PreK-12 Literacy Commission</option>
+                                                <option>Michigan Prescription Drug and Opioid Abuse Commission</option>
+                                                <option>Michigan Public Safety Communications Interoperability Board</option>
+                                                <option>Michigan Public School Employees’ Retirement Board</option>
+                                                <option>Michigan Public Service Commission</option>
+                                                <option>Michigan Soybean Promotion Committee</option>
+                                                <option>Michigan State Capitol Commission</option>
+                                                <option>Michigan State Council for Interstate Juvenile Supervision</option>
+                                                <option>Michigan State Housing Development Authority</option>
+                                                <option>Michigan State University Board of Trustees</option>
+                                                <option>Michigan State Waterways Commission</option>
+                                                <option>Michigan Statewide Independent Living Council</option>
+                                                <option>Michigan Strategic Fund Board of Directors</option>
+                                                <option>Michigan Task Force on Jail and Pretrial Incarceration </option>
+                                                <option>Michigan Task Force on Physicians Assistants</option>
+                                                <option>Michigan Tax Tribunal</option>
+                                                <option>Michigan Tech Board of Control</option>
+                                                <option>Michigan Trails Advisory Council</option>
+                                                <option>Michigan Travel Commission</option>
+                                                <option>Michigan Tree Fruit Commission</option>
+                                                <option>Michigan Truck Safety Commission</option>
+                                                <option>Michigan Unarmed Combat Commission</option>
+                                                <option>Michigan Veterans Facilities Board of Managers</option>
+                                                <option>Michigan Veterans Trust Fund Board of Trustees</option>
+                                                <option>Michigan Veterans' Facility Authority</option>
+                                                <option>Michigan Wheat Promotion Committee</option>
+                                                <option>Michigan Wildlife Council</option>
+                                                <option>Michigan Women's Commission</option>
+                                                <option>Michigan Workforce Development Board</option>
+                                                <option>Middle-Eastern American Affairs Commission</option>
+                                                <option>Midwest Interstate Passenger Rail Commission</option>
+                                                <option>Midwest U.S.-Japan Association Board</option>
+                                                <option>Midwestern Higher Education Compact</option>
+                                                <option>Military Appeals Tribunal</option>
+                                                <option>Municipal Stability Board</option>
+                                                <option>Natural Resources Commission</option>
+                                                <option>Natural Resources Trust Fund Board of Directors</option>
+                                                <option>Northern Michigan University Board of Trustees</option>
+                                                <option>Oakland University Board of Trustees</option>
+                                                <option>Organized Retail Crime Advisory Board</option>
+                                                <option>Pipeline Safety Advisory Board</option>
+                                                <option>Port Authority Advisory Committee</option>
+                                                <option>Poverty Task Force</option>
+                                                <option>Propane Commission</option>
+                                                <option>Protect Michigan Commission</option>
+                                                <option>Public Health Advisory Council</option>
+                                                <option>Regional Transit Authority</option>
+                                                <option>Residential Builders’ and Maintenance and Alteration Contractors’ Board</option>
+                                                <option>Return to School Advisory Council</option>
+                                                <option>Rural Development Fund Board</option>
+                                                <option>Saginaw Valley State University Board of Control</option>
+                                                <option>Sault St. Marie Bridge Authority</option>
+                                                <option>School Safety Commission</option>
+                                                <option>School Safety Task Force</option>
+                                                <option>Self Insurers' Security, Second Injury Fund, Silicosis, Dust Disease, and Logging Industry Compensat</option>
+                                                <option>Ski Area Safety Board</option>
+                                                <option>State Boundary Commission</option>
+                                                <option>State Building Authority Board of Trustees</option>
+                                                <option>State Construction Code Commission</option>
+                                                <option>State Council for Interstate Adult Offender Supervision</option>
+                                                <option>State Fairgrounds Sale Advisory Committee</option>
+                                                <option>State Fire Safety Board</option>
+                                                <option>State Historic Preservation Review Board</option>
+                                                <option>State Historical Records Advisory Board</option>
+                                                <option>State of Michigan Investment Board</option>
+                                                <option>State of Michigan Retirement Board </option>
+                                                <option>State Officers Compensation Commission</option>
+                                                <option>State Plumbing Board</option>
+                                                <option>State Police Retirement Board </option>
+                                                <option>State Survey and Remonumentation Commission</option>
+                                                <option>State Tax Commission</option>
+                                                <option>State Teacher Tenure Commission</option>
+                                                <option>State Transportation Commission</option>
+                                                <option>Suicide Prevention Commission</option>
+                                                <option>Talent Investment Board</option>
+                                                <option>Task Force on Forensic Science</option>
+                                                <option>Task Force on Juvenile Justice Reform</option>
+                                                <option>Timber Advisory Council</option>
+                                                <option>Trial Court Funding Commission </option>
+                                                <option>Underground Storage Tank Authority Board</option>
+                                                <option>Underwater Salvage and Preserve Committee</option>
+                                                <option>Unemployment Insurance Appeals Commission</option>
+                                                <option>Unmanned Aircraft Systems Task Force</option>
+                                                <option>UP Energy Task Force</option>
+                                                <option>Utility Consumer Participation Board</option>
+                                                <option>Veterans Memorial Park Commission</option>
+                                                <option>Water Use Advisory Council</option>
+                                                <option>Wayne County Airport Authority</option>
+                                                <option>Western Michigan University Board of Control</option>
+                                                <option>Wetland Advisory Council</option>
+                                                <option>Women in Sports Task Force</option>
+                                                <option>Workers' Compensation Board of Magistrates</option>
+                                                <option>Workers' Disability Compensation Appeals Commission</option>
+                                                <option>World War I Centennial Commission</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_board_position">If there is a specific designation/position for this board, what position/designation are you applying for?</label>
+                                            <input type="text" id="popup_board_position">
+                                        </div>
+
+                                        <div class="input-set col-12 col-md-12 col-lg-12">
+                                            <label for="popup_board_years_served">If seeking reappointment to this board, how many years have you served to this point?</label>
+                                            <input type="number" id="popup_board_years_served">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-action row justify-content-center mt-5">
+                                        <button class="btn" type="button" onclick="ClosePopupModule()">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="row">
             <!-- Works good as a component. Just need to find where to put it on the form if I'm gonna keep it. -->
             <section class="page-controls-module col-12" hidden>
