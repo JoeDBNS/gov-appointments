@@ -18,3 +18,8 @@
         transform: scale(0.94);
     }
 }
+
+.btn-slim {
+    @extend .btn;
+    padding: 3px 26px;
+}
