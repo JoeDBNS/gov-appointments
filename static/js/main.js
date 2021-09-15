@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
     if (window.location.pathname.toLowerCase().indexOf('/form-long.html') !== -1) {
         // InitFormListeners();
         SetupFormFieldMasks('form-long');
-        // SetReferenceListeners();
+        SetReferenceListeners();
 
         // InitFormProgressMarkers();
         InitFormProgressDisplay();
@@ -211,6 +211,13 @@ function OpenPopupModule(open_target) {
     var popup = document.querySelector('#app-popup');
     var popup_target = popup.querySelector('[data-popup-page="' + open_target + '"]');
 
+    // education
+    // board
+    // employment
+
+    // license_cert
+    // marijuana
+    // office_held
 
     if (popup && popup_target) {
         popup.classList.add('popup-container-show');
