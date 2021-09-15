@@ -46,6 +46,35 @@
             &:first-of-type {
                 margin-top: 60px;
             }
+
+            .multi-list {
+                margin: 7px 0;
+
+                .list {
+                    .list-row {
+                        .details {
+                            display: flex;
+                            margin: 5px 0;
+                            padding-left: 5px;
+                            border-radius: 3px;
+                            background-color: transparent;
+                            transition: linear 0.1s all;
+                            &:hover {
+                                background-color: $brand-gray-500;
+                            }
+
+                            .label {
+                                width: 70%;
+                                padding-top: 3px;
+                            }
+                            .action {
+                                width: 30%;
+                                text-align: end;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .form-action {
