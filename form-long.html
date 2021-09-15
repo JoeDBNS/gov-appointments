@@ -1159,6 +1159,13 @@
                                 </fieldset>
                             </div>
 
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-veteran" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="veteran-status">If yes, enter Veteran status</label>
+                                    <input type="text" id="veteran-status">
+                                </div>
+                            </div>
+
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-4">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Do you have a Disability?</legend>
@@ -1173,6 +1180,13 @@
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-disability" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="disability-status">If yes, enter Disability status</label>
+                                    <input type="text" id="disability-status">
+                                </div>
                             </div>
 
                             <div class="input-set col-12 mt-4">
@@ -1364,6 +1378,13 @@
                                 </fieldset>
                             </div>
 
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-income-add-sources" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="income-add-sources-details">If yes, please elaborate</label>
+                                    <textarea id="income-add-sources-details" data-required-nocheck></textarea>
+                                </div>
+                            </div>
+
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Have you ever run for, or have been appointed to, public office?</legend>
@@ -1378,6 +1399,33 @@
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-run-public-office" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="run-public-office-details">If yes, which office?</label>
+                                    <input type="text" id="run-public-office-details">
+                                </div>
+
+                                <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
+                                    <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
+                                        <legend class="fieldset-legend row">Have you ever held an elected or an appointed public office?</legend>
+                                        <div class="fieldset-inputs row">
+                                            <input id="fieldset-radio-elected-public-office-yes" type="radio" name="fieldset-radio-elected-public-office" value="yes">
+                                            <label for="fieldset-radio-elected-public-office-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                                <span class="label-text">Yes</span>
+                                            </label>
+                                            <input id="fieldset-radio-elected-public-office-no" type="radio" name="fieldset-radio-elected-public-office" value="no">
+                                            <label for="fieldset-radio-elected-public-office-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                                <span class="label-text">No</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-elected-public-office" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                    add multiple goes here...
+                                </div>
                             </div>
                         </div>
 
@@ -1403,6 +1451,13 @@
                                 </fieldset>
                             </div>
 
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-professional-nomination" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="professional-nomination-details">If yes, which group?</label>
+                                    <textarea id="professional-nomination-details"></textarea>
+                                </div>
+                            </div>
+
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Are you seeking this appointment to represent a certain interest or professional group or organization?</legend>
@@ -1417,6 +1472,13 @@
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-rep-certain-group" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="rep-certain-group-details">If yes, which group?</label>
+                                    <textarea id="rep-certain-group-details"></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
@@ -1509,208 +1571,299 @@
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Have you ever held any previous governemnt appointments?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-help-prev-appointments-yes" type="radio" name="fieldset-radio-help-prev-appointments" value="yes">
+                                        <label for="fieldset-radio-help-prev-appointments-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-help-prev-appointments-no" type="radio" name="fieldset-radio-help-prev-appointments" value="no">
+                                        <label for="fieldset-radio-help-prev-appointments-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-help-prev-appointments" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-prev-appointment-list">If yes, please list the appointment(s).</label>
+                                    <textarea id="additional-prev-appointment-list" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Is there any person or group who might take overt or covert steps to attack, even unfairly, your appointment?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-overt-attack-steps-yes" type="radio" name="fieldset-radio-overt-attack-steps" value="yes">
+                                        <label for="fieldset-radio-overt-attack-steps-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-overt-attack-steps-no" type="radio" name="fieldset-radio-overt-attack-steps" value="no">
+                                        <label for="fieldset-radio-overt-attack-steps-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
                             </div>
 
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-overt-attack-steps" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-overt-attack-list">If yes, please list the person(s) or group(s).</label>
+                                    <textarea id="additional-overt-attack-list" data-required-nocheck></textarea>
+                                </div>
+                            </div>
+
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
-                                    <legend class="fieldset-legend row">Is there any matter in which you are involved in that is or may be incompatible with the discharge of the duties of the position(s) to which you seek to be appointed or that may impaor or tend to impair your independence of judgement or action in the performance of the duties of that position?</legend>
+                                    <legend class="fieldset-legend row">Is there any matter in which you are involved in that is or may be incompatible with the discharge of the duties of the position(s) to which you seek to be appointed or that may impair or tend to impair your independence of judgement or action in the performance of the duties of that position?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-matter-impair-duties-yes" type="radio" name="fieldset-radio-matter-impair-duties" value="yes">
+                                        <label for="fieldset-radio-matter-impair-duties-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-matter-impair-duties-no" type="radio" name="fieldset-radio-matter-impair-duties" value="no">
+                                        <label for="fieldset-radio-matter-impair-duties-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-matter-impair-duties" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-matter-impair-duties-explain">If yes, please explain.</label>
+                                    <textarea id="additional-matter-impair-duties-explain" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Have you ever been the subject of a criminal investigation?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-subject-criminal-investigation-yes" type="radio" name="fieldset-radio-subject-criminal-investigation" value="yes">
+                                        <label for="fieldset-radio-subject-criminal-investigation-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-subject-criminal-investigation-no" type="radio" name="fieldset-radio-subject-criminal-investigation" value="no">
+                                        <label for="fieldset-radio-subject-criminal-investigation-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-subject-criminal-investigation" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-subject-criminal-investigation-explain">If yes, please explain.</label>
+                                    <textarea id="additional-subject-criminal-investigation-explain" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Have you ever been disciplined or cited for breach of ethics or unprofessional conduct by or been the subject of a complaint to any court, administrative agency, professional association, disciplinary committee, or any other professional group?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-subject-unprof-conduct-yes" type="radio" name="fieldset-radio-subject-unprof-conduct" value="yes">
+                                        <label for="fieldset-radio-subject-unprof-conduct-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-subject-unprof-conduct-no" type="radio" name="fieldset-radio-subject-unprof-conduct" value="no">
+                                        <label for="fieldset-radio-subject-unprof-conduct-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-subject-unprof-conduct" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-subject-unprof-conduct-explain">If yes, please explain.</label>
+                                    <textarea id="additional-subject-unprof-conduct-explain" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Have you ever been arrested, imprisoned, been on probation, or been on parole for violation of any federal, state, county or municipal law, regulation, or ordinance; including traffic violations for which a fine of $150.00 or more was imposed, this includes driving under the influence of alcohol and/or drugs?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-violation-of-law-yes" type="radio" name="fieldset-radio-violation-of-law" value="yes">
+                                        <label for="fieldset-radio-violation-of-law-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-violation-of-law-no" type="radio" name="fieldset-radio-violation-of-law" value="no">
+                                        <label for="fieldset-radio-violation-of-law-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-violation-of-law" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-violation-of-law-explain">If yes, please explain.</label>
+                                    <textarea id="additional-violation-of-law-explain" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Have you ever been affiliated (as an officer, owner, director, trustee, partner, advisor, or consultant) with any institutions (corporations, firms, partnerships, business enterprises, non-profit organizations, etc.) within the past ten years that might present a potential conflict or interest or appearance of conflict of interest with your requested appointment?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-affiliation-conflict-yes" type="radio" name="fieldset-radio-affiliation-conflict" value="yes">
+                                        <label for="fieldset-radio-affiliation-conflict-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-affiliation-conflict-no" type="radio" name="fieldset-radio-affiliation-conflict" value="no">
+                                        <label for="fieldset-radio-affiliation-conflict-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-affiliation-conflict" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-affiliation-conflict-explain">If yes, please explain.</label>
+                                    <textarea id="additional-affiliation-conflict-explain" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Are you, your spouse or partner, or any member of your household or other close family members related to state government official or employee?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-members-related-to-gov-employee-yes" type="radio" name="fieldset-radio-members-related-to-gov-employee" value="yes">
+                                        <label for="fieldset-radio-members-related-to-gov-employee-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-members-related-to-gov-employee-no" type="radio" name="fieldset-radio-members-related-to-gov-employee" value="no">
+                                        <label for="fieldset-radio-members-related-to-gov-employee-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-members-related-to-gov-employee" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-members-related-to-gov-employee-details">If yes, please provide the details.</label>
+                                    <textarea id="additional-members-related-to-gov-employee-details" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Have you held a job requiring lobby activity?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-job-requiring-lobby-yes" type="radio" name="fieldset-radio-job-requiring-lobby" value="yes">
+                                        <label for="fieldset-radio-job-requiring-lobby-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-job-requiring-lobby-no" type="radio" name="fieldset-radio-job-requiring-lobby" value="no">
+                                        <label for="fieldset-radio-job-requiring-lobby-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-job-requiring-lobby" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-job-requiring-lobby-detail">If yes, please provide details.</label>
+                                    <textarea id="additional-job-requiring-lobby-detail" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Are you a member of any charitable or civic organizations?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-member-of-charity-yes" type="radio" name="fieldset-radio-member-of-charity" value="yes">
+                                        <label for="fieldset-radio-member-of-charity-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-member-of-charity-no" type="radio" name="fieldset-radio-member-of-charity" value="no">
+                                        <label for="fieldset-radio-member-of-charity-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-member-of-charity" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-member-of-charity-details">If yes, please provide details.</label>
+                                    <textarea id="additional-member-of-charity-details" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Have you ever been publicly identified, in person or by organizational membership, with a controversial national or local issue or have you ever submitted written views to any governmental authority, whether executive or legislative, or to the news media on any controversial issue?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-public-controversial-issue-yes" type="radio" name="fieldset-radio-public-controversial-issue" value="yes">
+                                        <label for="fieldset-radio-public-controversial-issue-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-public-controversial-issue-no" type="radio" name="fieldset-radio-public-controversial-issue" value="no">
+                                        <label for="fieldset-radio-public-controversial-issue-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
                             </div>
 
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-public-controversial-issue" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-public-controversial-issue-details">If yes, please provide details.</label>
+                                    <textarea id="additional-public-controversial-issue-details" data-required-nocheck></textarea>
+                                </div>
+                            </div>
+
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
-                                    <legend class="fieldset-legend row">Are you presently, or have you ever been a party in interest, or have you r actions ever been the subject of, any administrative agency proceeding or civil litigation which is related in any way to the position to which you are seeking appointment?</legend>
+                                    <legend class="fieldset-legend row">Are you presently, or have you ever been a party in interest, or have your actions ever been the subject of, any administrative agency proceeding or civil litigation which is related in any way to the position to which you are seeking appointment?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-subject-of-litigation-yes" type="radio" name="fieldset-radio-subject-of-litigation" value="yes">
+                                        <label for="fieldset-radio-subject-of-litigation-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-subject-of-litigation-no" type="radio" name="fieldset-radio-subject-of-litigation" value="no">
+                                        <label for="fieldset-radio-subject-of-litigation-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-subject-of-litigation" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-subject-of-litigation-details">If yes, please provide details.</label>
+                                    <textarea id="additional-subject-of-litigation-details" data-required-nocheck></textarea>
+                                </div>
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
                                 <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
                                     <legend class="fieldset-legend row">Are you currently, or in the last 6 months been delinquent on any debt? (Include income, property, or other taxes, governmental loans, overpayment of benefits, required payments into or under governmental programs, and other debts or required payments to the government).?</legend>
                                     <div class="fieldset-inputs row">
-                                        <input id="fieldset-radio-__replace__-yes" type="radio" name="fieldset-radio-__replace__" value="yes">
-                                        <label for="fieldset-radio-__replace__-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                        <input id="fieldset-radio-deliquent-debt-yes" type="radio" name="fieldset-radio-deliquent-debt" value="yes">
+                                        <label for="fieldset-radio-deliquent-debt-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
                                             <span class="label-text">Yes</span>
                                         </label>
-                                        <input id="fieldset-radio-__replace__-no" type="radio" name="fieldset-radio-__replace__" value="no">
-                                        <label for="fieldset-radio-__replace__-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                        <input id="fieldset-radio-deliquent-debt-no" type="radio" name="fieldset-radio-deliquent-debt" value="no">
+                                        <label for="fieldset-radio-deliquent-debt-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
                                             <span class="label-text">No</span>
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0" data-target="fieldset-radio-deliquent-debt" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set input-set-required-nocheck col-12 col-md-12 col-lg-12">
+                                    <label for="additional-deliquent-debt-details">If yes, please provide details.</label>
+                                    <textarea id="additional-deliquent-debt-details" data-required-nocheck></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
