@@ -194,6 +194,33 @@ function InitFormProgressMarkers() {
     });
 }
 
+function ClosePopupModule() {
+    var popup = document.querySelector('#app-popup');
+    var open_popup_page = popup.querySelector('.content-page-show');
+
+    if (popup) {
+        popup.classList.remove('popup-container-show');
+
+        if (open_popup_page) {
+            open_popup_page.classList.remove('content-page-show');
+        }
+    }
+}
+
+function OpenPopupModule(open_target) {
+    var popup = document.querySelector('#app-popup');
+    var popup_target = popup.querySelector('[data-popup-page="' + open_target + '"]');
+
+
+    if (popup && popup_target) {
+        popup.classList.add('popup-container-show');
+        popup_target.classList.add('content-page-show');
+    }
+    else {
+        console.log('Popup target not found.');
+    }
+}
+
 // Forms related functions
 function SetupFormFieldMasks(form_id) {
     var form = document.querySelector('#' + form_id);
