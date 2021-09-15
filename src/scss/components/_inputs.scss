@@ -112,7 +112,7 @@ input[type="radio"] {
     color: #d40000;
 }
 
-.input-set-required .set-fieldset label::after {
+.input-set-required.set-fieldset label::after {
     content: "";
     position: relative;
     left: 0;
