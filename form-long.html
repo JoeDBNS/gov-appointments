@@ -1506,11 +1506,38 @@
                             </div>
 
                             <div class="input-set col-12 col-md-12 col-lg-12">
-                                <p>Provide the boards that you are applying for (Maximum 5)</p>
+                                <p class="mb-0">Provide the boards that you are applying for (Maximum 5)</p>
+                                <br>
+                                <button type="button" class="btn-slim" onclick="OpenPopupModule('board')">Add A Board</button>
                             </div>
 
-                            <div class="input-set col-12 col-md-12 col-lg-12">
-                                <p><bold>TABLE GOES HERE</bold></p>
+                            <div class="multi-list col-12 col-md-12 col-lg-12 mt-5">
+                                <p>Boards you are applying for</p>
+                                <ul class="list">
+                                    <li class="list-row">
+                                        <div class="details">
+                                            <div class="label">
+                                                Board one
+                                            </div>
+
+                                            <div class="action">
+                                                <button type="button" class="btn-slim" aria-label="Remove board: ____">Remove</button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-row">
+                                        <div class="details">
+                                            <div class="label">
+                                                Board two
+                                            </div>
+
+                                            <div class="action">
+                                                <button type="button" class="btn-slim" aria-label="Remove board: ____">Remove</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1522,6 +1549,48 @@
 
                         <div class="form-section row">
                             <!--|-->
+                        </div>
+
+                        <div class="form-section row">
+                            <div class="section-header col-12">
+                                <div class="header-text">Post-Secondary Education Details</div>
+                                <div class="header-divider col"></div>
+                            </div>
+
+                            <div class="input-set col-12 col-md-12 col-lg-12">
+                                <p class="mb-0">List Post-Secondary Educational Institutions Attended</p>
+                                <br>
+                                <button type="button" class="btn-slim" onclick="OpenPopupModule('education')">Add An Institution</button>
+                            </div>
+
+                            <div class="multi-list col-12 col-md-12 col-lg-12 mt-5">
+                                <p>Post-Secondary Educational Institutions You Attended</p>
+                                <ul class="list">
+                                    <li class="list-row">
+                                        <div class="details">
+                                            <div class="label">
+                                                Institute one (1998-1999)
+                                            </div>
+
+                                            <div class="action">
+                                                <button type="button" class="btn-slim" aria-label="Remove institute: ____">Remove</button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-row">
+                                        <div class="details">
+                                            <div class="label">
+                                                Institute two (2000-2002)
+                                            </div>
+
+                                            <div class="action">
+                                                <button type="button" class="btn-slim" aria-label="Remove institute: ____">Remove</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -1551,6 +1620,43 @@
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="form-section row">
+                            <div class="input-set col-12 col-md-12 col-lg-12">
+                                <p class="mb-0">Provide your employment information during the last ten years. Five entries are allowed. (Maximum 5)</p>
+                                <br>
+                                <button type="button" class="btn-slim" onclick="OpenPopupModule('employment')">Add An Employer</button>
+                            </div>
+
+                            <div class="multi-list col-12 col-md-12 col-lg-12 mt-5">
+                                <p>Current/Previous Employment</p>
+                                <ul class="list">
+                                    <li class="list-row">
+                                        <div class="details">
+                                            <div class="label">
+                                                Employer one
+                                            </div>
+
+                                            <div class="action">
+                                                <button type="button" class="btn-slim" aria-label="Remove employer: ____">Remove</button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-row">
+                                        <div class="details">
+                                            <div class="label">
+                                                Employer two
+                                            </div>
+
+                                            <div class="action">
+                                                <button type="button" class="btn-slim" aria-label="Remove employer: ____">Remove</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
