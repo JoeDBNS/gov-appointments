@@ -1227,6 +1227,119 @@
                             </div>
                         </div>
 
+                        <div class="form-section row">
+                            <div class="section-header col-12">
+                                <div class="header-text">License Information</div>
+                                <div class="header-divider col"></div>
+                            </div>
+
+                            <div class="input-set col-12 col-md-12 col-lg-12">
+                                <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
+                                    <legend class="fieldset-legend row">Do you currently hold any current licenses or certificates?</legend>
+                                    <div class="fieldset-inputs row">
+                                        <input id="fieldset-radio-current-license-cert-yes" type="radio" name="fieldset-radio-current-license-cert" value="yes">
+                                        <label for="fieldset-radio-current-license-cert-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                            <span class="label-text">Yes</span>
+                                        </label>
+                                        <input id="fieldset-radio-current-license-cert-no" type="radio" name="fieldset-radio-current-license-cert" value="no">
+                                        <label for="fieldset-radio-current-license-cert-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                            <span class="label-text">No</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0 mt-3 mb-5" data-target="fieldset-radio-current-license-cert" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set col-12 col-md-12 col-lg-12">
+                                    <p class="mb-0">Provide the current licenses or certifications that you hold (Maximum 5)</p>
+                                    <br>
+                                    <button type="button" class="btn-slim" onclick="OpenPopupModule('license_cert')">Add A License</button>
+                                </div>
+
+                                <div class="multi-list col-12 col-md-12 col-lg-12 mt-5">
+                                    <p>Licenses or certificates that you currently hold</p>
+                                    <ul class="list">
+                                        <li class="list-row">
+                                            <div class="details">
+                                                <div class="label">
+                                                    License one
+                                                </div>
+
+                                                <div class="action">
+                                                    <button type="button" class="btn-slim" aria-label="Remove license: ____">Remove</button>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-row">
+                                            <div class="details">
+                                                <div class="label">
+                                                    License two
+                                                </div>
+
+                                                <div class="action">
+                                                    <button type="button" class="btn-slim" aria-label="Remove license: ____">Remove</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="input-set col-12 col-md-12 col-lg-12 mt-5">
+                                <fieldset class="set-fieldset set-fieldset-radio-horizontal set-fieldset-no-marker container-fluid">
+                                    <legend class="fieldset-legend row">Do you currently hold or have applied for any form of a marijuana license?</legend>
+                                    <div class="fieldset-inputs row">
+                                        <input id="fieldset-radio-current-marijuana-license-yes" type="radio" name="fieldset-radio-current-marijuana-license" value="yes">
+                                        <label for="fieldset-radio-current-marijuana-license-yes" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 mr-md-1">
+                                            <span class="label-text">Yes</span>
+                                        </label>
+                                        <input id="fieldset-radio-current-marijuana-license-no" type="radio" name="fieldset-radio-current-marijuana-license" value="no">
+                                        <label for="fieldset-radio-current-marijuana-license-no" class="col-12 col-md-5 col-lg-4 col-xl-2 mx-0 ml-md-1">
+                                            <span class="label-text">No</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="col-12 row px-0 mx-0 mt-3" data-target="fieldset-radio-current-marijuana-license" data-target-type="radio" data-target-pass="yes" style="display: none;">
+                                <div class="input-set col-12 col-md-12 col-lg-12">
+                                    <p class="mb-0">Provide the current marijuana licenses you hold (Maximum 5)</p>
+                                    <br>
+                                    <button type="button" class="btn-slim" onclick="OpenPopupModule('marijuana')">Add A License</button>
+                                </div>
+
+                                <div class="multi-list col-12 col-md-12 col-lg-12 mt-5">
+                                    <p>Marijuana licenses you currently hold</p>
+                                    <ul class="list">
+                                        <li class="list-row">
+                                            <div class="details">
+                                                <div class="label">
+                                                    License one
+                                                </div>
+
+                                                <div class="action">
+                                                    <button type="button" class="btn-slim" aria-label="Remove license: ____">Remove</button>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-row">
+                                            <div class="details">
+                                                <div class="label">
+                                                    License two
+                                                </div>
+
+                                                <div class="action">
+                                                    <button type="button" class="btn-slim" aria-label="Remove license: ____">Remove</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="form-section row" hidden>
                             <div class="section-header col-12">
                                 <div class="header-text">Provide Your Internet Presence</div>
